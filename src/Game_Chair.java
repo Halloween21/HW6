@@ -1,6 +1,6 @@
 public class Game_Chair {
 
-    public static void main(String[] args) {
+    public static void main(String[] args)  {
         BetMore_Game b=new BetMore_Game();
 
         Player Computer=new Player();
@@ -13,6 +13,9 @@ public class Game_Chair {
         Player_2.Start();
 
         b.Find_Winner(Computer, Player_2);
+
+
+
 
     }
 }

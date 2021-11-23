@@ -5,7 +5,7 @@ public class Player {
     int card_number=0;
     boolean user_selected;
     Scanner scanner =new Scanner(System.in);
-
+    int i;
 
     public void Start(){
         if (user_selected){
@@ -14,7 +14,7 @@ public class Player {
 
         else {
 
-             for (int i=0;i<5;i++){
+             for (i=0;i<5;i++){
 
                  card_number=b.Play();
                  if (i<4) {
@@ -29,6 +29,9 @@ public class Player {
 
 
 
+             }
+             if (i==5){
+            System.out.println("Ihr aktuelles Ergebnis ist " + card_number);
              }
         }
     }

@@ -6,7 +6,16 @@ public class BetMore_Game {
         return s.pick_Card();
     }
 
-    public  void Find_Winner (Player Computer, Player Player_2){
+    public  void Find_Winner (Player Computer, Player Player_2)  {
+
+        System.out.println("the winner is being calculated, please wait a second...");
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+
         System.out.println("-----------------------------------------------");
         if (Computer.card_number > Player_2.card_number){
             System.out.println("Computer hat gewonnen!");
