@@ -6,10 +6,20 @@ public class Player {
     boolean user_selected;
     Scanner scanner =new Scanner(System.in);
     int i;
+    int speicher;
 
     public void Start(){
         if (user_selected){
         this.card_number=b.Play();
+
+           /* for (i=0;i<5;i++) {
+
+                speicher = b.Play();
+                if (speicher>card_number){
+                    card_number=speicher;
+                }
+
+            }*/
         }
 
         else {
@@ -19,11 +29,12 @@ public class Player {
                  card_number=b.Play();
                  if (i<4) {
                      System.out.println("Ihr aktuelles Ergebnis ist " + card_number);
-                     System.out.println("Wollen sie erneut das Risiko eingehen? Geben sie ja oder nein ein");
+                     System.out.println("Wollen sie erneut das Risiko eingehen? Geben sie ja oder nein ein (nein=n)");
                      String s = scanner.next();
-                     if (s.equals("nein") || s.equals("Nein")) {
+                     if (s.equals("nein")||s.equals("n")) {
                          break;
                      }
+
                  }
 
 

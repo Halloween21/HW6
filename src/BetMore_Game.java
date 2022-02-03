@@ -8,6 +8,7 @@ public class BetMore_Game {
 
     public  void Find_Winner (Player Computer, Player Player_2)  {
 
+        System.out.println("Ihre Zahl ist: " + Player_2.card_number);
         System.out.println("the winner is being calculated, please wait a second...");
         try {
             Thread.sleep(2000);
@@ -16,8 +17,8 @@ public class BetMore_Game {
         }
 
 
-        System.out.println("-----------------------------------------------");
-        if (Computer.card_number > Player_2.card_number){
+        System.out.println("\n\n-----------------------------------------------");
+        if (Computer.card_number >= Player_2.card_number){
             System.out.println("Computer hat gewonnen!");
 
         }
